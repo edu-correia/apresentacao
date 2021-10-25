@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202025;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.content{
+    width: 80%;
+    margin: 50px 10% 20px 10%;
+}
+
+.content .header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .header a{
+    padding: 5px 30px 5px 30px;
+    border-radius: 4px;
+    background: #0ABD11;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px #08830c;
+    display: grid;
+    place-items: center;
+}
+
+.content .header a:active{
+    box-shadow: 0 2px #08830c;
+    transform: translateY(2px);
+}
+
+.content .header .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .header .title .title-text{
+    margin-left: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.content .header .title .title-text h1{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.content .title .icon{
+    width: 90px;
+    height: auto;
+}
+
+.content .description{
+    margin-top: 30px;
+}
+
+.content .description h3{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.content .carousel{
+    margin-top: 30px;
+}
+
+.content .carousel h3{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.c-carousel__slide img{
+    width: 85%;
+}
+
+.content .tabs{
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+.content .tabs input{
+    display: none;
+}
+
+.content .tabs label{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #fff;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.content .tabs label img{
+    width: 32px;
+    margin-right: 5px;
+}
+
+.content .tabs input:checked ~ section{
+    display: block;
+}
+
+.content .tabs input:checked ~ label{
+    opacity: 1;
+}
+
+.content .tabs section{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+}
+
+.comment{
+    margin-bottom: 20px;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.project .project-logo{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.project .project-link{
+    width: 16px;
+}
+
+.project .project-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project .project-text h4{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.related-app{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.related-app .related-app-logo{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.related-app h4{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+}
+
+.content .line{
+    margin-top: 5px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header a{
+        padding: 5px 0 5px 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content .tabs label span{
+        display: none;
+    }
+}

@@ -30,6 +30,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px #08830c;
     display: grid;
+    color: #fff;
     place-items: center;
 }
 
@@ -172,6 +173,11 @@ body {
 .related-app h4{
     font-family: 'Righteous', sans-serif;
     font-weight: 400;
+}
+
+.stars img{
+    width: 24px;
+    height: 24px;
 }
 
 .content .line{
